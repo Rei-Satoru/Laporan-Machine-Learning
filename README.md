@@ -19,6 +19,20 @@ Manfaat Proyek:
 5. Mendukung promosi destinasi wisata Jawa Barat melalui pemanfaatan teknologi rekomendasi.
 
 ## Business Understanding
+### Problem Statements:
+1. Bagaimana membantu wisatawan menemukan destinasi wisata yang sesuai dengan preferensinya?
+2. Bagaimana memanfaatkan informasi kategori dan deskripsi wisata untuk menghasilkan rekomendasi yang relevan?
+3. Bagaimana membangun sistem rekomendasi wisata menggunakan pendekatan Machine Learning yang sederhana namun efektif?
+### Goals:
+1. Membangun sistem rekomendasi destinasi wisata Jawa Barat.
+2. Memberikan rekomendasi wisata berdasarkan kemiripan karakteristik destinasi.
+3. Mengevaluasi kualitas rekomendasi menggunakan metrik Precision@10.
+### Solution Statements:
+Pendekatan yang digunakan pada proyek ini adalah:
+1. Menggunakan TF-IDF Vectorizer untuk mengubah data teks menjadi representasi numerik.
+2. Menggunakan Cosine Similarity untuk mengukur tingkat kemiripan antar destinasi wisata.
+3. Mengimplementasikan metode Content-Based Filtering untuk menghasilkan rekomendasi wisata yang relevan.
+
 ## Data Understanding
 ## Data Preparation
 ## Modeling
