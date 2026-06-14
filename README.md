@@ -6,7 +6,7 @@
 ### NIM : 2330511063
 ### Kelas : 6B
 
-## **Project** Overview
+## Project Overview
 Pariwisata merupakan salah satu sektor penting yang berkontribusi terhadap pertumbuhan ekonomi daerah. Provinsi Jawa Barat memiliki beragam destinasi wisata yang mencakup wisata alam, wisata budaya, dan wisata rekreasi. Banyaknya pilihan destinasi wisata sering kali membuat wisatawan kesulitan menemukan tempat yang sesuai dengan minat mereka.
 
 Untuk mengatasi permasalahan tersebut, dikembangkan sebuah Sistem Rekomendasi Destinasi Wisata Jawa Barat berbasis Machine Learning. Sistem ini menggunakan pendekatan **Content-Based Filtering** dengan memanfaatkan informasi kategori dan deskripsi destinasi wisata. Melalui sistem rekomendasi ini, pengguna dapat memperoleh rekomendasi tempat wisata yang memiliki karakteristik serupa dengan destinasi yang disukai sebelumnya.
@@ -35,7 +35,19 @@ Pendekatan yang digunakan pada proyek ini adalah:
 
 ## Data Understanding
 ### Informasi Dataset
-Dataset yang digunakan: wisata_indonesia_clean.csv
+Dataset yang digunakan: **wisata_indonesia_clean.csv**
+Dataset berisi informasi destinasi wisata di Indonesia yang kemudian difilter sehingga hanya menyisakan data destinasi wisata yang berada di Provinsi Jawa Barat.
+
+Variabel Dataset
+|  Variabel	        |  Keterangan                    |
+|-------------------|--------------------------------|
+|  nama_wisata      |	 Nama destinasi wisata         |
+|  kategori	        |  Kategori wisata               |
+|  deskripsi_bersih	|  Deskripsi destinasi wisata    |
+|  provinsi	        |  Provinsi lokasi wisata        |
+|  kota_kabupaten	  |  Kota/Kabupaten lokasi wisata  |
+|  alamat	          |  Alamat destinasi wisata       |
+
 ## Data Preparation
 ## Modeling
 ## Evaluation
