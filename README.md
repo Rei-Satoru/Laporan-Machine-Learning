@@ -37,7 +37,6 @@ Pendekatan yang digunakan pada proyek ini adalah:
 ### Informasi Dataset
 Dataset yang digunakan: **wisata_indonesia_clean.csv**
 Dataset berisi informasi destinasi wisata di Indonesia yang kemudian difilter sehingga hanya menyisakan data destinasi wisata yang berada di Provinsi Jawa Barat.
-
 Variabel Dataset
 |  Variabel	        |  Keterangan                    |
 |-------------------|--------------------------------|
@@ -47,6 +46,14 @@ Variabel Dataset
 |  provinsi	        |  Provinsi lokasi wisata        |
 |  kota_kabupaten	  |  Kota/Kabupaten lokasi wisata  |
 |  alamat	          |  Alamat destinasi wisata       |
+### Dataset Understanding Process
+Tahapan yang dilakukan:
+1. Memeriksa jumlah data.
+2. Memeriksa tipe data menggunakan info().
+3. Memeriksa missing value menggunakan isnull().sum().
+4. Memfilter data berdasarkan provinsi Jawa Barat.
+### Hasil Filtering
+Dataset awal berisi data wisata dari seluruh Indonesia. Setelah proses filtering, hanya data wisata yang berasal dari Provinsi Jawa Barat yang digunakan dalam proses pemodelan.
 
 ## Data Preparation
 ## Modeling
