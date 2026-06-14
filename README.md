@@ -6,10 +6,10 @@
 ### NIM : 2330511063
 ### Kelas : 6B
 
-## Project Overview
+## **Project** Overview
 Pariwisata merupakan salah satu sektor penting yang berkontribusi terhadap pertumbuhan ekonomi daerah. Provinsi Jawa Barat memiliki beragam destinasi wisata yang mencakup wisata alam, wisata budaya, dan wisata rekreasi. Banyaknya pilihan destinasi wisata sering kali membuat wisatawan kesulitan menemukan tempat yang sesuai dengan minat mereka.
 
-Untuk mengatasi permasalahan tersebut, dikembangkan sebuah Sistem Rekomendasi Destinasi Wisata Jawa Barat berbasis Machine Learning. Sistem ini menggunakan pendekatan Content-Based Filtering dengan memanfaatkan informasi kategori dan deskripsi destinasi wisata. Melalui sistem rekomendasi ini, pengguna dapat memperoleh rekomendasi tempat wisata yang memiliki karakteristik serupa dengan destinasi yang disukai sebelumnya.
+Untuk mengatasi permasalahan tersebut, dikembangkan sebuah Sistem Rekomendasi Destinasi Wisata Jawa Barat berbasis Machine Learning. Sistem ini menggunakan pendekatan **Content-Based Filtering** dengan memanfaatkan informasi kategori dan deskripsi destinasi wisata. Melalui sistem rekomendasi ini, pengguna dapat memperoleh rekomendasi tempat wisata yang memiliki karakteristik serupa dengan destinasi yang disukai sebelumnya.
 
 ### Manfaat Proyek:
 1. Membantu wisatawan menemukan destinasi wisata di Jawa Barat yang sesuai dengan minatnya.
@@ -29,11 +29,13 @@ Untuk mengatasi permasalahan tersebut, dikembangkan sebuah Sistem Rekomendasi De
 3. Mengevaluasi kualitas rekomendasi menggunakan metrik Precision@10.
 ### Solution Statements:
 Pendekatan yang digunakan pada proyek ini adalah:
-1. Menggunakan TF-IDF Vectorizer untuk mengubah data teks menjadi representasi numerik.
-2. Menggunakan Cosine Similarity untuk mengukur tingkat kemiripan antar destinasi wisata.
-3. Mengimplementasikan metode Content-Based Filtering untuk menghasilkan rekomendasi wisata yang relevan.
+1. Menggunakan **TF-IDF Vectorizer** untuk mengubah data teks menjadi representasi numerik.
+2. Menggunakan **Cosine Similarity** untuk mengukur tingkat kemiripan antar destinasi wisata.
+3. Mengimplementasikan metode **Content-Based Filtering** untuk menghasilkan rekomendasi wisata yang relevan.
 
 ## Data Understanding
+### Informasi Dataset
+Dataset yang digunakan: wisata_indonesia_clean.csv
 ## Data Preparation
 ## Modeling
 ## Evaluation
