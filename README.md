@@ -94,7 +94,40 @@ Menjadi:
 `pantai indah`
 
 ## Modeling
-
+### Content-Based Filtering
+Sistem rekomendasi dibangun menggunakan metode **Content-Based Filtering** yang memanfaatkan informasi deskripsi dan kategori wisata.
+### TF-IDF Vectorizer
+**TF-IDF** digunakan untuk mengubah data teks menjadi vektor numerik.
+Parameter yang digunakan:
+```
+TfidfVectorizer(
+    max_features=5000,
+    stop_words='english'
+)
+```
+Keunggulan TF-IDF:
+1. Memberikan bobot lebih tinggi pada kata yang penting.
+2. Mengurangi pengaruh kata yang terlalu sering muncul.
+3. Cocok digunakan pada sistem rekomendasi berbasis teks.
+### Cosine Similarity
+Setelah data direpresentasikan dalam bentuk vektor TF-IDF, dilakukan perhitungan tingkat kemiripan menggunakan Cosine Similarity.
+Rumus:
+```
+[
+Similarity(A,B)=\frac{A \cdot B}{||A|| \times ||B||}
+]
+```
+Nilai similarity:
+| Nilai	| Interpretasi |
+|-------|--------------|
+| 0	    | Tidak mirip  |
+| 1	    | Sangat mirip |
+Proses Rekomendasi
+1. Pengguna memilih destinasi wisata.
+2. Sistem mengambil indeks wisata tersebut.
+3. Menghitung nilai cosine similarity terhadap seluruh wisata lain.
+4. Mengurutkan nilai similarity dari terbesar ke terkecil.
+5. Menampilkan Top-10 destinasi wisata yang paling mirip.
 
 ## Evaluation
 
