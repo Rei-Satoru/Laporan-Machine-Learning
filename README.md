@@ -111,6 +111,7 @@ Keunggulan TF-IDF:
 3. Cocok digunakan pada sistem rekomendasi berbasis teks.
 ### Cosine Similarity
 Setelah data direpresentasikan dalam bentuk vektor TF-IDF, dilakukan perhitungan tingkat kemiripan menggunakan Cosine Similarity.
+
 Rumus:
 ```
 [
@@ -131,7 +132,38 @@ Proses Rekomendasi:
 5. Menampilkan Top-10 destinasi wisata yang paling mirip.
 
 ## Evaluation
+### Metrik Evaluasi
+Evaluasi dilakukan menggunakan Precision@10.
 
+Rumus:
+```
+Precision@10 =
+Jumlah Rekomendasi Relevan / 10
+```
+### Definisi Relevan
+Rekomendasi dianggap relevan apabila memiliki nilai kategori_baru yang sama dengan wisata acuan.
+
+Contoh:
+1. Wisata Acuan: Wisata Alam
+2. Rekomendasi dengan kategori Wisata Alam dianggap relevan.
+Implementasi Evaluasi
+```
+def precision_at_k(
+    rekomendasi,
+    kategori_target,
+    k=10
+):
+
+    relevan = rekomendasi[
+        rekomendasi['kategori_baru']
+        == kategori_target
+    ]
+
+    return len(relevan) / k
+```
+### Hasil Evaluasi
+Model dievaluasi menggunakan Precision@10 terhadap hasil rekomendasi yang dihasilkan.
+Semakin tinggi nilai Precision@10, semakin baik kemampuan sistem dalam memberikan rekomendasi yang relevan.
 
 ## Deployment
 
