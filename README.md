@@ -122,7 +122,8 @@ Nilai similarity:
 |-------|--------------|
 | 0	    | Tidak mirip  |
 | 1	    | Sangat mirip |
-Proses Rekomendasi
+
+Proses Rekomendasi:
 1. Pengguna memilih destinasi wisata.
 2. Sistem mengambil indeks wisata tersebut.
 3. Menghitung nilai cosine similarity terhadap seluruh wisata lain.
