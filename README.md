@@ -1,5 +1,4 @@
 # Laporan Proyek Machine Learning
-
 ## Judul: Sistem Rekomendasi Destinasi Wisata Jawa Barat
 
 ### Nama : Rayhan Muhammad Syawal
@@ -8,6 +7,7 @@
 
 ## Project Overview
 Pariwisata merupakan salah satu sektor penting yang berkontribusi terhadap pertumbuhan ekonomi daerah. Provinsi Jawa Barat memiliki beragam destinasi wisata yang mencakup wisata alam, wisata budaya, dan wisata rekreasi. Banyaknya pilihan destinasi wisata sering kali membuat wisatawan kesulitan menemukan tempat yang sesuai dengan minat mereka.
+
 Untuk mengatasi permasalahan tersebut, dikembangkan sebuah Sistem Rekomendasi Destinasi Wisata Jawa Barat berbasis Machine Learning. Sistem ini menggunakan pendekatan **Content-Based Filtering** dengan memanfaatkan informasi kategori dan deskripsi destinasi wisata. Melalui sistem rekomendasi ini, pengguna dapat memperoleh rekomendasi tempat wisata yang memiliki karakteristik serupa dengan destinasi yang disukai sebelumnya.
 
 ### Manfaat Proyek:
@@ -158,7 +158,6 @@ def precision_at_k(
         rekomendasi['kategori_baru']
         == kategori_target
     ]
-
     return len(relevan) / k
 ```
 ### Hasil Evaluasi
@@ -166,4 +165,29 @@ Model dievaluasi menggunakan Precision@10 terhadap hasil rekomendasi yang dihasi
 Semakin tinggi nilai Precision@10, semakin baik kemampuan sistem dalam memberikan rekomendasi yang relevan.
 
 ## Deployment
+Model yang telah dibangun disimpan menggunakan library Pickle.
+```
+pickle.dump(
+    tfidf,
+    open(
+        'tfidf_model.pkl',
+        'wb'
+    )
+)
+pickle.dump(
+    cosine_sim,
+    open(
+        'cosine_similarity.pkl',
+        'wb'
+    )
+)
+```
+File model yang dihasilkan:
+1. `tfidf_model.pkl`
+2. `cosine_similarity.pkl`
+Model dapat digunakan kembali tanpa perlu melakukan proses training ulang.
 
+## Hasil Visualisasi
+
+
+## Kesimpulan
