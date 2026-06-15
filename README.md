@@ -194,9 +194,12 @@ Model dapat digunakan kembali tanpa perlu melakukan proses training ulang.
 ## Hasil Visualisasi
 ### Distribusi Kategori Wisata Jawa Barat
 Tambahkan gambar hasil visualisasi pada bagian ini.
+
 `![Distribusi Kategori](images/distribusi_kategori.png)`
+
 ### Distribusi Kategori Hasil Rekomendasi
 Tambahkan gambar hasil visualisasi rekomendasi pada bagian ini.
+
 `![Distribusi Rekomendasi](images/distribusi_rekomendasi.png)`
 
 ## Kesimpulan
