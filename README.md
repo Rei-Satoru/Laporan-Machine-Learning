@@ -133,7 +133,7 @@ Proses Rekomendasi:
 
 ## Evaluation
 ### Metrik Evaluasi
-Evaluasi dilakukan menggunakan Precision@10.
+Evaluasi dilakukan menggunakan **Precision@10**.
 
 Rumus:
 ```
@@ -141,11 +141,12 @@ Precision@10 =
 Jumlah Rekomendasi Relevan / 10
 ```
 ### Definisi Relevan
-Rekomendasi dianggap relevan apabila memiliki nilai kategori_baru yang sama dengan wisata acuan.
+Rekomendasi dianggap relevan apabila memiliki nilai **kategori_baru** yang sama dengan wisata acuan.
 
 Contoh:
 1. Wisata Acuan: Wisata Alam
 2. Rekomendasi dengan kategori Wisata Alam dianggap relevan.
+
 Implementasi Evaluasi
 ```
 def precision_at_k(
@@ -185,9 +186,20 @@ pickle.dump(
 File model yang dihasilkan:
 1. `tfidf_model.pkl`
 2. `cosine_similarity.pkl`
+
 Model dapat digunakan kembali tanpa perlu melakukan proses training ulang.
 
 ## Hasil Visualisasi
-
+### Distribusi Kategori Wisata Jawa Barat
+Tambahkan gambar hasil visualisasi pada bagian ini.
+`![Distribusi Kategori](images/distribusi_kategori.png)`
+### Distribusi Kategori Hasil Rekomendasi
+Tambahkan gambar hasil visualisasi rekomendasi pada bagian ini.
+`![Distribusi Rekomendasi](images/distribusi_rekomendasi.png)`
 
 ## Kesimpulan
+Pada proyek ini berhasil dibangun sistem rekomendasi destinasi wisata Jawa Barat menggunakan pendekatan Content-Based Filtering.
+
+Metode TF-IDF digunakan untuk mengubah informasi tekstual menjadi representasi numerik, sedangkan Cosine Similarity digunakan untuk mengukur tingkat kemiripan antar destinasi wisata.
+
+Sistem mampu menghasilkan rekomendasi wisata yang relevan berdasarkan karakteristik wisata yang dipilih pengguna. Evaluasi menggunakan Precision@10 menunjukkan bahwa pendekatan ini dapat digunakan sebagai solusi sederhana dan efektif dalam membantu wisatawan menemukan destinasi wisata yang sesuai dengan preferensinya.
