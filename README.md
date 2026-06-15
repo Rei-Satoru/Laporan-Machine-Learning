@@ -84,6 +84,14 @@ jabar['content'] = (
 )
 ```
 ### 4. Text Cleaning
+Tahapan preprocessing teks meliputi:
+A. Mengubah teks menjadi lowercase.
+B. Menghapus karakter selain huruf.
+C. Menghapus spasi berlebih.
+Contoh:
+`Pantai Indah!!! 2025`
+Menjadi:
+`pantai indah`
 
 ## Modeling
 
