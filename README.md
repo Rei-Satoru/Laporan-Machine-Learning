@@ -55,6 +55,30 @@ Tahapan yang dilakukan:
 Dataset awal berisi data wisata dari seluruh Indonesia. Setelah proses filtering, hanya data wisata yang berasal dari Provinsi Jawa Barat yang digunakan dalam proses pemodelan.
 
 ## Data Preparation
+Tahapan persiapan data yang dilakukan sebagai berikut.
+### 1. Filtering Data Jawa Barat
+Data difilter menggunakan kolom `provinsi` sehingga hanya data wisata dari Jawa Barat yang digunakan.
+`jabar = df[
+    df['provinsi'].str.contains(
+        'Jawa Barat',
+        case=False,
+        na=False
+    )
+].copy()`
+### 2. Kategori Wisata
+Kategori wisata dikelompokkan menjadi tiga kategori utama.
+|  Kategori Awal	                                      |  Kategori Baru    |
+|  gunung, curug, pantai, danau, bukit, hutan, geopark	|  Wisata Alam      |
+|  museum, sejarah, budaya	                            |  Wisata Budaya    |
+|  lainnya	                                            |  Wisata Rekreasi  |
+### 3. Feature Engineering
+### 4. Text Cleaning
+
 ## Modeling
+
+
 ## Evaluation
+
+
 ## Deployment
+
