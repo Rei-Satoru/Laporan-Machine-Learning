@@ -1,5 +1,5 @@
 # Laporan Proyek Machine Learning
-## Judul: Sistem Rekomendasi Destinasi Wisata Jawa Barat
+## Judul: Sistem Rekomendasi Destinasi Wisata Jawa Barat Menggunakan TF-IDF dan Cosine Similarity
 
 ### Nama : Rayhan Muhammad Syawal
 ### NIM : 2330511063
