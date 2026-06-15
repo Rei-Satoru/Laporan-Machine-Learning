@@ -39,12 +39,12 @@ Dataset berisi informasi destinasi wisata di Indonesia yang kemudian difilter se
 Variabel Dataset
 |  Variabel	        |  Keterangan                    |
 |-------------------|--------------------------------|
-|  nama_wisata      |	 Nama destinasi wisata         |
+|  nama_wisata      |  Nama destinasi wisata         |
 |  kategori	        |  Kategori wisata               |
 |  deskripsi_bersih	|  Deskripsi destinasi wisata    |
 |  provinsi	        |  Provinsi lokasi wisata        |
-|  kota_kabupaten	  |  Kota/Kabupaten lokasi wisata  |
-|  alamat	          |  Alamat destinasi wisata       |
+|  kota_kabupaten	|  Kota/Kabupaten lokasi wisata  |
+|  alamat	        |  Alamat destinasi wisata       |
 ### Dataset Understanding Process
 Tahapan yang dilakukan:
 1. Memeriksa jumlah data.
@@ -67,7 +67,8 @@ Data difilter menggunakan kolom `provinsi` sehingga hanya data wisata dari Jawa 
 ].copy()`
 ### 2. Kategori Wisata
 Kategori wisata dikelompokkan menjadi tiga kategori utama.
-|  Kategori Awal	                                      |  Kategori Baru    |
+|  Kategori Awal	                                    |  Kategori Baru    |
+|-------------------------------------------------------|-------------------|
 |  gunung, curug, pantai, danau, bukit, hutan, geopark	|  Wisata Alam      |
 |  museum, sejarah, budaya	                            |  Wisata Budaya    |
 |  lainnya	                                            |  Wisata Rekreasi  |
