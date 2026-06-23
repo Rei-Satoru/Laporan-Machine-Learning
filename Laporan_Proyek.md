@@ -59,11 +59,9 @@ jabar = df[
 ```
 ### 2. Kategori Wisata
 Kategori wisata dikelompokkan menjadi tiga kategori utama.
-|  Kategori Awal	                                    |  Kategori Baru    |
-|-------------------------------------------------------|-------------------|
-|  gunung, curug, pantai, danau, bukit, hutan, geopark	|  Wisata Alam      |
-|  museum, sejarah, budaya	                            |  Wisata Budaya    |
-|  lainnya	                                            |  Wisata Rekreasi  |
+
+<img width="173" height="69" alt="Screenshot 2026-06-23 112238" src="https://github.com/user-attachments/assets/a48ff733-bd7e-45bd-b168-e1805cf7c001" />
+
 ### 3. Feature Engineering
 Membuat fitur baru bernama `content` yang merupakan gabungan antara kategori dan deskripsi wisata.
 ```
@@ -79,11 +77,7 @@ A. Mengubah teks menjadi lowercase.
 B. Menghapus karakter selain huruf.
 C. Menghapus spasi berlebih.
 
-Contoh:
-`Pantai Indah!!! 2025`
-
-Menjadi:
-`pantai indah`
+<img width="716" height="185" alt="image" src="https://github.com/user-attachments/assets/c318569e-45e2-4c56-90ff-a746861ca414" />
 
 ## Modeling
 ### Content-Based Filtering
