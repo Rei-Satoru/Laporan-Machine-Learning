@@ -32,16 +32,9 @@ Pendekatan yang digunakan pada proyek ini adalah:
 ### Informasi Dataset
 Dataset yang digunakan: [**wisata_indonesia_clean.csv**](https://www.kaggle.com/datasets/sagitasantia/wisata-indonesia])
 Dataset berisi informasi destinasi wisata di Indonesia yang kemudian difilter sehingga hanya menyisakan data destinasi wisata yang berada di Provinsi Jawa Barat.
-Variabel Dataset
-|  Variabel	        |  Keterangan                    |
-|-------------------|--------------------------------|
-|  nama_wisata      |  Nama destinasi wisata         |
-|  kategori	        |  Kategori wisata               |
-|  deskripsi_bersih	|  Deskripsi destinasi wisata    |
-|  provinsi	        |  Provinsi lokasi wisata        |
-|  kota_kabupaten	|  Kota/Kabupaten lokasi wisata  |
-|  alamat	        |  Alamat destinasi wisata       |
+
 <img width="342" height="278" alt="Screenshot 2026-06-23 103812" src="https://github.com/user-attachments/assets/8dc9964b-c3a2-4cf3-87d0-9e2376134da7" />
+
 ### Dataset Understanding Process
 Tahapan yang dilakukan:
 1. Memeriksa jumlah data.
