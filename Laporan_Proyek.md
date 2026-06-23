@@ -95,17 +95,10 @@ Proses Rekomendasi:
 ### Metrik Evaluasi
 Evaluasi dilakukan menggunakan **Precision@10**.
 
-Rumus:
-```
-Precision@10 =
-Jumlah Rekomendasi Relevan / 10
-```
+<img width="865" height="435" alt="Screenshot 2026-06-23 113649" src="https://github.com/user-attachments/assets/ed8d4736-f652-4962-a2c7-5a4fb5334ddd" />
+
 ### Definisi Relevan
 Rekomendasi dianggap relevan apabila memiliki nilai **kategori_baru** yang sama dengan wisata acuan.
-
-Contoh:
-1. Wisata Acuan: Wisata Alam
-2. Rekomendasi dengan kategori Wisata Alam dianggap relevan.
 
 Implementasi Evaluasi
 ```
@@ -153,12 +146,12 @@ Model dapat digunakan kembali tanpa perlu melakukan proses training ulang.
 ### Distribusi Kategori Wisata Jawa Barat
 Tambahkan gambar hasil visualisasi pada bagian ini.
 
-`![Distribusi Kategori](images/distribusi_kategori.png)`
+<img width="691" height="467" alt="Screenshot 2026-06-23 113947" src="https://github.com/user-attachments/assets/dde73a81-a216-4287-8c8c-507f9a1efa83" />
 
 ### Distribusi Kategori Hasil Rekomendasi
 Tambahkan gambar hasil visualisasi rekomendasi pada bagian ini.
 
-`![Distribusi Rekomendasi](images/distribusi_rekomendasi.png)`
+<img width="709" height="469" alt="Screenshot 2026-06-23 114045" src="https://github.com/user-attachments/assets/8d145907-fa30-499b-89df-edb4606f74a1" />
 
 ## Kesimpulan
 Pada proyek ini berhasil dibangun sistem rekomendasi destinasi wisata Jawa Barat menggunakan pendekatan Content-Based Filtering.
