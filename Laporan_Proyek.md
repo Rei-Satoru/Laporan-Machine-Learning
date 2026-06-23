@@ -41,6 +41,7 @@ Variabel Dataset
 |  provinsi	        |  Provinsi lokasi wisata        |
 |  kota_kabupaten	|  Kota/Kabupaten lokasi wisata  |
 |  alamat	        |  Alamat destinasi wisata       |
+<img width="342" height="278" alt="Screenshot 2026-06-23 103812" src="https://github.com/user-attachments/assets/8dc9964b-c3a2-4cf3-87d0-9e2376134da7" />
 ### Dataset Understanding Process
 Tahapan yang dilakukan:
 1. Memeriksa jumlah data.
