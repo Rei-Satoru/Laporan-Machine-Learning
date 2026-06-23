@@ -72,11 +72,7 @@ jabar['content'] = (
 )
 ```
 ### 4. Text Cleaning
-Tahapan preprocessing teks meliputi:
-
-A. Mengubah teks menjadi lowercase.
-B. Menghapus karakter selain huruf.
-C. Menghapus spasi berlebih.
+Tahapan preprocessing teks meliput Mengubah teks menjadi lowercase, Menghapus karakter selain huruf dan Menghapus spasi berlebih.
 
 <img width="716" height="185" alt="image" src="https://github.com/user-attachments/assets/c318569e-45e2-4c56-90ff-a746861ca414" />
 
