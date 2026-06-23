@@ -116,7 +116,7 @@ def precision_at_k(
 Model dievaluasi menggunakan Precision@10 terhadap hasil rekomendasi yang dihasilkan.
 Semakin tinggi nilai Precision@10, semakin baik kemampuan sistem dalam memberikan rekomendasi yang relevan.
 
-<img width="865" height="389" alt="Screenshot 2026-06-23 113649" src="https://github.com/user-attachments/assets/24e34d98-58f6-4e29-8f16-92f00210335d" />
+<img width="877" height="423" alt="Screenshot 2026-06-23 115750" src="https://github.com/user-attachments/assets/b5d7d116-c927-4668-986f-33b16d9c1eee" />
 
 ## Deployment
 Model yang telah dibangun disimpan menggunakan library Pickle.
