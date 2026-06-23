@@ -48,15 +48,9 @@ Dataset awal berisi data wisata dari seluruh Indonesia. Setelah proses filtering
 Tahapan persiapan data yang dilakukan sebagai berikut.
 ### 1. Filtering Data Jawa Barat
 Data difilter menggunakan kolom `provinsi` sehingga hanya data wisata dari Jawa Barat yang digunakan.
-```
-jabar = df[
-    df['provinsi'].str.contains(
-        'Jawa Barat',
-        case=False,
-        na=False
-    )
-].copy()
-```
+
+<img width="338" height="24" alt="Screenshot 2026-06-23 113137" src="https://github.com/user-attachments/assets/058400c8-2225-450b-b1e6-bba54ba78822" />
+
 ### 2. Kategori Wisata
 Kategori wisata dikelompokkan menjadi tiga kategori utama.
 
@@ -79,33 +73,16 @@ Tahapan preprocessing teks meliput Mengubah teks menjadi lowercase, Menghapus ka
 ## Modeling
 ### Content-Based Filtering
 Sistem rekomendasi dibangun menggunakan metode **Content-Based Filtering** yang memanfaatkan informasi deskripsi dan kategori wisata.
+
 ### TF-IDF Vectorizer
 **TF-IDF** digunakan untuk mengubah data teks menjadi vektor numerik.
-Parameter yang digunakan:
-```
-TfidfVectorizer(
-    max_features=5000,
-    stop_words='english'
-)
-```
-Keunggulan TF-IDF:
-1. Memberikan bobot lebih tinggi pada kata yang penting.
-2. Mengurangi pengaruh kata yang terlalu sering muncul.
-3. Cocok digunakan pada sistem rekomendasi berbasis teks.
+
+<img width="189" height="26" alt="image" src="https://github.com/user-attachments/assets/33df36f1-764f-4e63-9079-c52292e0888d" />
+
 ### Cosine Similarity
 Setelah data direpresentasikan dalam bentuk vektor TF-IDF, dilakukan perhitungan tingkat kemiripan menggunakan Cosine Similarity.
 
-Rumus:
-```
-[
-Similarity(A,B)=\frac{A \cdot B}{||A|| \times ||B||}
-]
-```
-Nilai similarity:
-| Nilai	| Interpretasi |
-|-------|--------------|
-| 0	    | Tidak mirip  |
-| 1	    | Sangat mirip |
+<img width="269" height="24" alt="Screenshot 2026-06-23 113426" src="https://github.com/user-attachments/assets/cb5fcc95-8e4e-4642-9e1b-fb1cefd01f3b" />
 
 Proses Rekomendasi:
 1. Pengguna memilih destinasi wisata.
