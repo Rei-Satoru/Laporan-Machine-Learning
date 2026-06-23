@@ -1,6 +1,8 @@
 # Laporan Proyek Machine Learning
 ## Judul: Sistem Rekomendasi Destinasi Wisata Jawa Barat Menggunakan TF-IDF dan Cosine Similarity
 
+### Nama : Rayhan Muhammad Syawal
+### NIM : 2330511063
 ## Project Overview
 Pariwisata merupakan salah satu sektor penting yang berkontribusi terhadap pertumbuhan ekonomi daerah. Provinsi Jawa Barat memiliki beragam destinasi wisata yang mencakup wisata alam, wisata budaya, dan wisata rekreasi. Banyaknya pilihan destinasi wisata sering kali membuat wisatawan kesulitan menemukan tempat yang sesuai dengan minat mereka.
 
