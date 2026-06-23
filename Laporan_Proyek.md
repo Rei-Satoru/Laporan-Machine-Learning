@@ -95,8 +95,6 @@ Proses Rekomendasi:
 ### Metrik Evaluasi
 Evaluasi dilakukan menggunakan **Precision@10**.
 
-<img width="865" height="435" alt="Screenshot 2026-06-23 113649" src="https://github.com/user-attachments/assets/ed8d4736-f652-4962-a2c7-5a4fb5334ddd" />
-
 ### Definisi Relevan
 Rekomendasi dianggap relevan apabila memiliki nilai **kategori_baru** yang sama dengan wisata acuan.
 
@@ -117,6 +115,8 @@ def precision_at_k(
 ### Hasil Evaluasi
 Model dievaluasi menggunakan Precision@10 terhadap hasil rekomendasi yang dihasilkan.
 Semakin tinggi nilai Precision@10, semakin baik kemampuan sistem dalam memberikan rekomendasi yang relevan.
+
+<img width="865" height="435" alt="Screenshot 2026-06-23 113649" src="https://github.com/user-attachments/assets/ed8d4736-f652-4962-a2c7-5a4fb5334ddd" />
 
 ## Deployment
 Model yang telah dibangun disimpan menggunakan library Pickle.
